@@ -84,52 +84,93 @@ nav span{
 }
 /* Estilização Header */
 
+/* Container dos Cards */
+
+
+.container_cards, #titulo-section{
+    margin-left: 5%;
+}
+
+
+.container_cards {
+    background: red;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.cards{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-content: center;
+}
+
 .card {
     margin: 20px;
-    width: calc(20% - 40px);
+    width: 240px;
     height: 285px;
     padding: 20px;
-    border: 2px solid #75c78c; /* Adicione a borda verde */
-    border-radius: 5px; /* Arredonde as bordas */
-}
 
-.card img {
-    max-width: 100%;
-    height: auto;
-}
-
-.imagem img {
-    width: 100%;
-    height: auto;
 }
 
 .textos {
-    flex: 1;
-    padding: 10px;
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textos h2 {
+    font-size: xx-large;
+}
+
+.textos p {
+    font-size: large;
+}
+
+.imagem {
+    width: 100%;
+    height: 50%;
+    background-color: #75c78c;
+    background-color: rgb(71, 67, 67);
+}
+
+#div-1-btns-desc-curso{
     justify-content: space-between;
+    display: flex;
+    margin: 10px;
 }
 
-.titulo-produto {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.descricao-produto {
-    font-size: 1rem;
-}
-
-.botao-comprar {
-    background-color: #75c78c; /* Defina a cor de fundo do botão para verde */
-    color: white;
-    border: none;
-    padding: 5px 15px;
-    border-radius: 5px;
+#btn-desc-add-carrinho, #btn-desc-add-favorito{
     cursor: pointer;
-    font-size: 1rem;
 }
 
+
+#btn-desc-add-carrinho{
+    background-color: #75c78c;
+    width: 75%;
+    color: #ffff;
+    font-weight: bold;
+}
+
+#btn-desc-add-favorito{
+    width: 20%;
+    background-color: transparent;
+    border: solid 1px #1c1d1f29;
+
+}
+
+#btn-desc-add-carrinho, #btn-desc-add-favorito, #btn-desc-comprar{
+    height: 40px;
+}
 /* Footer */
 
 #div-footer{
