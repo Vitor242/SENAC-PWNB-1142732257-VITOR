@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cadastro de Clientes</title>
+  <link rel="stylesheet" type="text/css" href="CadCliente.css">
+  <script src="CadCliente.js"></script>
+</head>
+
+<body>
+  <h1>CADASTRO DE CLIENTES</h1>
+
+  <form id="frm1">
+    nome: <input type="text" id="nome"><br>
+    sobrenome: <input type="text" id="sobrenome"><br>
+    data de nascimento: <input type="date" id="dataNascimento"><br>
+    cidade: <input type="text" id="cidade"><br>
+    CEP: <input type="text" id="cep"><br>
+    endereço: <input type="text" id="endereco"><br>
+    email: <input type="text" id="email"><br>
+    <label for="tipoCliente">Selecione o tipo de cliente:</label>
+    <select id="tipoCliente">
+      <option value="bronze">Bronze</option>
+      <option value="prata">Prata</option>
+      <option value="ouro">Ouro</option>
+      <option value="platina">Platina</option>
+      <option value="diamante">Diamante</option>
+    </select>
+    <br>
+    <label for="uf">Selecione a UF:</label>
+    <select id="uf" onclick="carregarUFs();">
+    </select>
+    <br>
+    <button type="button" onclick="incluirCliente();">Cadastrar Cliente</button>
+    <br>
+    <button type="button" onclick="limparCampos();">Limpar Campos</button>
+  </form>
+
+  <table id="clientesLista">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+        <th>Data de Nascimento</th>
+        <th>Cidade</th>
+        <th>CEP</th>
+        <th>Endereço</th>
+        <th>Email</th>
+        <th>Tipo de Cliente</th>
+        <th>UF</th> 
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <div class="botoes-container">
+    <button type="button" onclick="deletarCliente();">Deletar Cliente</button>
+    <button type="button" onclick="editarCliente();">Editar Cliente</button>
+  </div>
+
+  <script src="CadCliente.js"></script>
+</body>
+
+</html>
